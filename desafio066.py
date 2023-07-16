@@ -2,7 +2,7 @@
 999, que é a condição de parada. No final, mostre quantos números foram digitados e qual a soma entre eles, desconsiderando
 a flag.'''
 
-n = soma = i = 0
+soma = i = 0
 while True:
     n = int(input('Informe um número [digite 999 para parar]: '))
     if n == 999:

@@ -5,7 +5,7 @@ import random
 qtd_vitorias = 0
 
 while True:
-    cpu_n = random.randint(0, 10)
+    cpu_n = random.randint(0, 11)
     jogador_n = int(input('\nInforme um número: '))
     resultado = cpu_n + jogador_n
     jogada = str(input("Informe a jogada - PAR ou IMPAR: ")).strip().upper()[0]
