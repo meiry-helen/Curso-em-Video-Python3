@@ -2,8 +2,19 @@
 
 Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.'''
 
-contagem = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
-num = -1
-while num < 0 or num > 20:
-    num = int(input('Informe o número entre 0 e 20: '))
-print('O número digitado foi', contagem[num])
+contagem = ('zero', 'um', 'dois', 'três', 'quatro',
+            'cinco', 'seis', 'sete', 'oito', 'nove',
+            'dez', 'onze', 'doze', 'treze', 'catorze',
+            'quinze', 'dezesseis', 'dezessete', 'dezoito',
+            'dezenove', 'vinte')
+
+while True:
+    num = -1
+    while num < 0 or num > 20:
+        num = int(input('Informe o número entre 0 e 20: '))
+    print('O número digitado foi', contagem[num])
+    continuar = ' '
+    while continuar != 'S' and continuar != 'N':
+        continuar = str(input('Deseja continuar [S/N]: ')).upper()[0]
+    if continuar == 'N':
+        break

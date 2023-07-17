@@ -6,7 +6,11 @@ B) os últimos 4 colocados da tabela.
 C) uma lista com os times em ordem alfabética.
 D) em que posição na tabela está o time da Chapecoense.'''
 
-campeonato = ('Botafogo', 'Flamengo', 'Grêmio', 'Fluminense', 'Palmeiras', 'Bragantino', 'Fortaleza', 'São Paulo', 'Cruzeiro', 'Internacional', 'Athletico-PR', 'Athletico-MG', 'Santos', 'Cuiabá', 'Corinthians', 'Bahia', 'Goiás', 'Coritiba', 'Vasco da Gama', 'América-MG')
+campeonato = ('Botafogo', 'Flamengo', 'Grêmio', 'Fluminense',
+              'Palmeiras', 'Bragantino', 'Fortaleza', 'São Paulo',
+              'Cruzeiro', 'Internacional', 'Athletico-PR', 'Athletico-MG',
+              'Santos', 'Cuiabá', 'Corinthians', 'Bahia', 'Goiás',
+              'Coritiba', 'Vasco da Gama', 'América-MG')
 
 print('-'*60)
 print('{:^60}'.format('5 PRIMEIROS COLOCADOS'))
