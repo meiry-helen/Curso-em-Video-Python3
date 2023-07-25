@@ -9,4 +9,18 @@ if parenteses_esquerda == parenteses_direita:
 else:
     print('Expressão inválida')'''
 
-expressao = []
+expressao = str(input('Informe a expressão: '))
+pilha = []
+for i in expressao:
+    if i == '(':
+        pilha.append('(')
+    elif i == ')':
+        if len(expressao) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Expressão válida.')
+else:
+    print('Expressão inválida.')
