@@ -3,7 +3,7 @@ A) Quantas pessoas foram cadastradas.
 B) Uma listagem com as pessoas mais pesadas.
 C) Uma listagem com as pessoas mais leves.'''
 
-pessoas = list()
+pessoas = []
 cadastro_peso = []
 pesado = leve = 0
 while True:
